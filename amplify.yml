@@ -3,14 +3,31 @@ frontend:
   phases:
     preBuild:
       commands:
+        # Limpiar caché de npm para evitar problemas
+        - npm cache clean --force
+        # Instalar dependencias
         - npm ci
+        # Auditar y corregir vulnerabilidades automáticamente
+        - npm audit fix --audit-level moderate
     build:
       commands:
-        - npm run build -- --prod
+        # Build para producción en Angular
+        - npm run build -- --configuration production
+        # Alternativo si usas versión antigua: npm run build -- --prod
   artifacts:
-    baseDirectory: www
+    # Para Angular, normalmente es dist/nombre-proyecto
+    baseDirectory: dist/ducati
     files:
       - '**/*'
+    name: ducati-angular-build-$AWS_COMMIT_ID
   cache:
     paths:
       - node_modules/**/*
+      # Cache de npm para instalaciones más rápidas
+      - ~/.npm/**/*
+      # Cache de Angular CLI
+      - .angular/cache/**/*
+  # Variables de entorno para Angular
+  # environmentVariables:
+  #   - NODE_ENV=production
+  #   - NG_APP_API_URL=$API_URL
