@@ -1,0 +1,396 @@
+     .wrapper{
+          width: 100%;
+          height: 100vh;
+          background-color: #FFFFFF;
+        }
+
+        .body-home{
+          width: 100%;
+          height: 90vh;
+          background-color: #FFFFFF;
+          overflow-y: scroll!important;
+        }
+
+        .section-image{
+          border-top: 1px solid #7A7A7A1F!important;
+          border-bottom: 1px solid #7A7A7A1F!important;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+          padding: 2rem 0;
+        }
+        
+        .profile-avatar{
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #CD0000, #FF6B6B);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 48px;
+          margin-bottom: 1rem;
+          position: relative;
+        }
+
+        .edit-avatar{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background: #CD0000;
+          color: white;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          font-size: 12px;
+        }
+
+        .eslogan{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+
+        .eslogan .text-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 60%;
+        }
+        .eslogan .text-left{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 40%;
+            cursor: pointer;
+        }
+
+        .txt-1{
+          text-align: center;
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          letter-spacing: 0px;
+          color: #000000;
+          opacity: 1;
+        }
+
+        .txt-2{
+          text-align: right;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          font-size: 16px;
+          letter-spacing: 0px;
+          color: #000000;
+          opacity: 1;
+        }
+
+        .txt-red{
+          text-align: left;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          letter-spacing: 0px;
+          color: #CD0000;
+          text-transform: uppercase;
+          opacity: 1;
+        }
+        .icon-arrow{
+          color: #CD0000;
+          margin-left: 5px;
+        }
+
+        .section-name-user{
+          margin-top: 2rem;
+          padding-bottom: 2rem;
+          border-bottom: 1px solid #7A7A7A1F!important;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+        }
+
+        .txt-3{
+          text-align: center;
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          letter-spacing: 0px;
+          color: #000000;
+          opacity: 1;
+        }
+
+        .txt-user{
+          text-align: center;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          font-size: 20px;
+          letter-spacing: 0px;
+          color: #000000;
+          text-transform: uppercase;
+          opacity: 1;
+          margin-bottom: 0.5rem;
+        }
+
+        .user-email{
+          text-align: center;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 0.5rem;
+        }
+
+        .user-status{
+          background: #28a745;
+          color: white;
+          padding: 4px 12px;
+          border-radius: 12px;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .section-codigo{
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          border-bottom: 1px solid #7A7A7A1F!important;
+          background: #7A7A7A1F 0% 0% no-repeat padding-box;
+          opacity: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+        }
+        
+        .profile-section{
+          padding: 2rem 15px;
+          border-bottom: 1px solid #7A7A7A1F!important;
+          width: 100%;
+        }
+
+        .section-titulo{
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          font-size: 18px;
+          color: #000000;
+          text-transform: uppercase;
+          margin-bottom: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .edit-btn{
+          background: none;
+          border: none;
+          color: #CD0000;
+          cursor: pointer;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .profile-field{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 1.5rem;
+        }
+
+        .field-label{
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          color: #000000;
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+        }
+
+        .field-value{
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          color: #000000;
+          padding: 12px;
+          border: 1px solid #7A7A7A1F;
+          border-radius: 4px;
+          background: #FFFFFF;
+        }
+
+        .field-input{
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          color: #000000;
+          padding: 12px;
+          border: 1px solid #000000;
+          border-radius: 4px;
+          background: #FFFFFF;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        .section-puntaje{
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          padding-left: 15px;
+          padding-right: 15px;
+          background: #FFFFFF 0% 0% no-repeat padding-box;
+          opacity: 1;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+        }
+        .section-puntaje .puntaje{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+        }
+        .section-puntaje .ranking{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            gap: 1rem;
+        }
+        .section-puntaje .title-pnt{
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+        .section-puntaje .txt-pnt{
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: 0px;
+            color: #666;
+            opacity: 1;
+        }
+        .section-puntaje .txt-pnt-red{
+            margin-top: 5px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: 0px;
+            color: #CD0000;
+            opacity: 1;
+        }
+
+        .mdc-button{
+          background: #CD0000 0% 0% no-repeat padding-box;
+          opacity: 1;
+          width: 100%;
+          max-width: 200px;
+          height: 40px;
+          border-radius: 4px;
+          border: none;
+          cursor: pointer;
+          color: white;
+          text-align: center;
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+          margin-top: 1rem;
+        }
+
+        .mdc-button:hover {
+          background: #B50000;
+        }
+
+        .mdc-button.secondary{
+          background: transparent;
+          color: #CD0000;
+          border: 1px solid #CD0000;
+        }
+
+        .mdc-button.secondary:hover{
+          background: #CD0000;
+          color: white;
+        }
+
+        .buttons-container{
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 2rem;
+        }
+
+        .preferences-grid{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+        }
+
+        .preference-item{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          border: 1px solid #7A7A7A1F;
+          border-radius: 4px;
+        }
+
+        .toggle{
+          width: 40px;
+          height: 20px;
+          background: #ccc;
+          border-radius: 20px;
+          position: relative;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+        .toggle.active{
+          background: #CD0000;
+        }
+
+        .toggle::after{
+          content: '';
+          width: 16px;
+          height: 16px;
+          background: white;
+          border-radius: 50%;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          transition: left 0.3s;
+        }
+
+        .toggle.active::after{
+          left: 22px;
+        }
+
+        @media (max-width: 768px) {
+          .preferences-grid{
+            grid-template-columns: 1fr;
+          }
+          
+          .section-puntaje{
+            flex-direction: column;
+            gap: 2rem;
+          }
+        }

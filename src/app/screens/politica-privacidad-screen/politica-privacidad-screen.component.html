@@ -1,0 +1,65 @@
+<section class="home">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <mat-drawer #drawer mode="over" position="start">
+        <!-- Inyectamos el componente partial que muestra el menú izquierdo -->
+        <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+      <div class="body-home">
+        <div class="links mx-3 my-4">
+          <div class="line-color">
+            <div class="vertical-line" style="height: 111px"></div>
+          </div>
+          <div class="title-link">
+            <span>POLITICAS DE PRIVACIDAD</span>
+          </div>
+          <div class="arrow-icon">
+            <mat-icon class="icon-right">arrow_forward_ios</mat-icon>
+          </div>
+        </div>
+
+        <div class="main-container">
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+            inventore laborum porro repudiandae distinctio molestias? Rem
+            blanditiis ducimus numquam excepturi iure eaque modi, expedita
+            aperiam in fuga repudiandae quisquam adipisci. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Veritatis perferendis dolor
+            quibusdam obcaecati assumenda laborum consectetur? Dolor quidem
+            ducimus quam ipsa, praesentium eos architecto ullam pariatur
+            maiores, facilis sed voluptatum? Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Quis perspiciatis ratione magni
+            commodi odit, ipsum architecto, repellendus, quaerat omnis optio
+            praesentium accusantium consequatur iusto eaque qui vitae quo
+            repudiandae labore! Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Quam error accusamus, debitis molestiae,
+            voluptatibus quo consectetur ipsam sapiente cupiditate, labore
+            obcaecati ratione nobis eligendi recusandae repellat voluptatem
+            dolorem inventore aspernatur. Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Iste inventore laborum porro
+            repudiandae distinctio molestias? Rem blanditiis ducimus numquam
+            excepturi iure eaque modi, expedita aperiam in fuga repudiandae
+            quisquam adipisci. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Veritatis perferendis dolor quibusdam obcaecati
+            assumenda laborum consectetur? Dolor quidem ducimus quam ipsa,
+            praesentium eos architecto ullam pariatur maiores, facilis sed
+            voluptatum? Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Quis perspiciatis ratione magni commodi odit, ipsum
+            architecto, repellendus, quaerat omnis optio praesentium accusantium
+            consequatur iusto eaque qui vitae quo repudiandae labore! Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Quam error
+            accusamus, debitis molestiae, voluptatibus quo consectetur ipsam
+            sapiente cupiditate, labore obcaecati ratione nobis eligendi
+            recusandae repellat voluptatem dolorem inventore aspernatur.
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <app-footer-app></app-footer-app>
+      </div>
+    </mat-drawer-container>
+  </div>
+</section>

@@ -1,0 +1,117 @@
+<section class="home">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <mat-drawer #drawer mode="over" position="start">
+        <!-- Inyectamos el componente partial que muestra el menú izquierdo -->
+        <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+
+      <!-- Se coloca el header de las vistas -->
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+      <div class="body-home">
+        <!-- Main Content -->
+        <div class="main-content">
+          <div class="body-home">
+            <!-- Profile Header -->
+            <div class="section-image">
+              <div class="profile-avatar">
+                <i class="fas fa-user"></i>
+                <div class="edit-avatar">
+                  <i class="fas fa-pencil-alt"> </i>
+                </div>
+              </div>
+            </div>
+
+            <!-- User Info -->
+            <div class="section-name-user">
+              <div class="txt-user">Josue Santamaria Morales</div>
+              <div class="user-email">josuexsanta@email.com</div>
+              <div class="user-status">Cuenta Verificada</div>
+            </div>
+
+            <!-- Personal Information -->
+            <div class="profile-section">
+              <div class="section-titulo">
+                Información Personal
+                <button class="edit-btn" onclick="toggleEdit('personal')">
+                  <i class="fas fa-edit"></i> Editar
+                </button>
+              </div>
+
+              <div class="profile-field">
+                <div class="field-label">Nombre Completo</div>
+                <div class="field-value" id="nombre">
+                  Josue Santamaria Morales
+                </div>
+              </div>
+
+              <div class="profile-field">
+                <div class="field-label">Teléfono</div>
+                <div class="field-value" id="telefono">+52 222 123 4567</div>
+              </div>
+
+              <div class="profile-field">
+                <div class="field-label">Fecha de Nacimiento</div>
+                <div class="field-value" id="fecha">8 de Abril, 2001</div>
+              </div>
+
+              <div class="profile-field">
+                <div class="field-label">Género</div>
+                <div class="field-value" id="genero">Maculino</div>
+              </div>
+            </div>
+
+            <!-- Address Information -->
+            <div class="profile-section" style="background: #7a7a7a1f">
+              <div class="section-titulo">
+                Dirección
+                <button class="edit-btn" onclick="toggleEdit('address')">
+                  <i class="fas fa-edit"></i> Editar
+                </button>
+              </div>
+
+              <div class="profile-field">
+                <div class="field-label">Dirección</div>
+                <div class="field-value" id="direccion">
+                  Av. Juárez 123, Col. Centro
+                </div>
+              </div>
+
+              <div class="profile-field">
+                <div class="field-label">Ciudad</div>
+                <div class="field-value" id="ciudad">Puebla</div>
+              </div>
+
+              <div class="profile-field">
+                <div class="field-label">Estado</div>
+                <div class="field-value" id="estado">Puebla</div>
+              </div>
+
+              <div class="profile-field">
+                <div class="field-label">Código Postal</div>
+                <div class="field-value" id="cp">72000</div>
+              </div>
+            </div>
+
+            <!-- Account Stats -->
+            <div class="section-puntaje">
+              <div class="puntaje">
+                <div class="title-pnt">Miembro Desde</div>
+                <div class="txt-pnt">Fecha de registro</div>
+                <div class="txt-pnt-red">Enero 2023</div>
+              </div>
+              <div class="ranking">
+                <div class="title-pnt">Perfil Completo</div>
+                <div class="txt-pnt">Progreso del perfil</div>
+                <div class="txt-pnt-red">85%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <app-footer-app></app-footer-app>
+        </div>
+      </div>
+    </mat-drawer-container>
+  </div>
+</section>
